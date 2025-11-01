@@ -1,0 +1,38 @@
+[
+  {
+    "image": "/images/app-smplan.png",
+    "title": "SmPlan: ToDo List",
+    "companyName": "Planner Co.",
+    "id": 1,
+    "description": "The ultimate productivity app to manage tasks, set reminders, and plan your day with ease. Used by millions worldwide.",
+    "size": 65,
+    "reviews": 12450,
+    "ratingAvg": 4.9,
+    "downloads": 29600000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 2035 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "/images/app-desertion.png",
+    "title": "Desertion",
+    "companyName": "Game Studio",
+    "id": 2,
+    "description": "An immersive open-world adventure game with stunning graphics and a gripping storyline. Prepare to get lost!",
+    "size": 1800,
+    "reviews": 54000,
+    "ratingAvg": 4.5,
+    "downloads": 906000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 27000 }
+    ]
+  }
+]

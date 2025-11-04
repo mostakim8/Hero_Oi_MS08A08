@@ -17,7 +17,7 @@ const Navbar = () => {
     
   return (
     // 🚨 FIX: Removed the non-standard and width-restricting 'px-30' class.
-    <nav className="navbar bg-base-100 shadow-md sticky top-0 z-50 lg:px-30">
+    <nav className="navbar bg-base-100 shadow-md sticky top-0 z-50 lg:px-22">
       
       {/* 1. Navbar Start (Left Side: Logo and Mobile Menu Toggle) */}
       <div className="navbar-start">
@@ -41,9 +41,9 @@ const Navbar = () => {
         
         {/* Logo/Brand Section */}
         <NavLink to="/" className="flex items-center text-xl font-bold  normal-case">
-          <img src="/src/assets/logo.png" alt="Hero.Io Logo" className='w-15 h-15 mr-2' />
+          <img src="/src/assets/logo.png" alt="Hero.Io Logo" className='w-12 h-12 mr-2' />
           <h2 
-              className='text-4xl font-bold bg-clip-text text-transparent'
+              className='text-3xl font-bold bg-clip-text text-transparent'
               style={{ backgroundImage: HERO_GRADIENT }}
             >
               Hero.Io

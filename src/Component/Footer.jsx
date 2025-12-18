@@ -1,49 +1,36 @@
 import React from 'react';
-// Importing icons from Lucide React for social links
 import { Twitter, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
-  return (
-    // Main footer container with dark background and padding
-    <footer className="bg-[#10172A] text-white py-10 px-4 md:px-8 mt-12">
-      <div className="max-w-7xl mx-auto">
-        {/* Top section: Logo and Social Links */}
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start border-b border-gray-700 pb-8 mb-8">
-          {/* Logo and Company Name */}
-          <div className="flex items-center space-x-2 mb-6 md:mb-0">
-            {/* You'll need to provide your actual logo image source here */}
-            {/* For now, using a placeholder icon and the text */}
-            <img src="/src/assets/logo.png" alt="HERO.IO Logo" className="h-8 w-8" /> 
-            <span className="text-2xl font-bold">HERO.IO</span>
-          </div>
-
-          {/* Social Links Section */}
-          <div className="text-center md:text-right lg:pr-16 bg">
-            <h4 className="text-xl font-semibold mb-4">Social Links</h4>
-            <div className="flex justify-center  space-x-4">
-              {/* Twitter/X Icon */}
-              <a href="#" aria-label="Twitter" className=" transition-colors duration-200 border-black rounded-2xl pt-1 px-1 bg-white ">
-                <Twitter size={24} className='text-black/80 hover:text-blue-900 ' />
-              </a>
-              {/* LinkedIn Icon */}
-              <a href="#" aria-label="LinkedIn" className=" transition-colors duration-200 border-black rounded-2xl p-1 bg-white">
-                <Linkedin size={24} className=' text-black/80 hover:text-blue-900'/>
-              </a>
-              {/* Facebook Icon */}
-              <a href="#" aria-label="Facebook" className="text-black hover:text-white transition-colors duration-200 border-black rounded-2xl pt-[8px] pr-0.5 bg-white">
-                <Facebook size={24}  className='text-black/80 hover:text-blue-900'/>
-              </a>
+    return (
+        <footer className="bg-slate-900 text-white py-16 px-4">
+            <div className="max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-slate-800 pb-12">
+                    <div>
+                        <h2 className="text-3xl font-bold mb-4">HERO.IO</h2>
+                        <p className="text-slate-400">Providing the best software solutions for everyone, everywhere.</p>
+                    </div>
+                    <div>
+                        <h4 className="text-xl font-bold mb-6">Quick Links</h4>
+                        <ul className="space-y-3 text-slate-400">
+                            <li>About Us</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms of Service</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-xl font-bold mb-6">Follow Us</h4>
+                        <div className="flex gap-4">
+                            <Facebook className="hover:text-blue-500 cursor-pointer" />
+                            <Twitter className="hover:text-blue-400 cursor-pointer" />
+                            <Linkedin className="hover:text-blue-600 cursor-pointer" />
+                        </div>
+                    </div>
+                </div>
+                <p className="text-center mt-8 text-slate-500">© 2024 HERO.IO App Store. Built with Creativity.</p>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom section: Copyright */}
-        <div className="text-center text-gray-400 text-sm">
-          <p>Copyright © 2025 - All right reserved</p>
-        </div>
-      </div>
-    </footer>
-  );
+        </footer>
+    );
 };
 
 export default Footer;

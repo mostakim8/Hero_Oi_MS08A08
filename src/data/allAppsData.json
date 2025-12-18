@@ -1,0 +1,182 @@
+[
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3106/3106921.png",
+    "title": "SmPlan: ToDo List",
+    "companyName": "Planner Co.",
+    "id": 1,
+    "description": "Manage your tasks, set reminders, and plan your day effortlessly with SmPlan, the all-in-one productivity app.",
+    "size": 65,
+    "reviews": 12450,
+    "ratingAvg": 4.9,
+    "downloads": 29600000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 2035 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+    "title": "Forest: Focus For Productivity",
+    "companyName": "Forest App Ltd.",
+    "id": 2,
+    "description": "Stay focused and grow virtual trees while you concentrate on your work or study sessions.",
+    "size": 90,
+    "reviews": 84500,
+    "ratingAvg": 4.8,
+    "downloads": 18000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 21000 },
+      { "name": "5 star", "count": 59000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/685/685022.png",
+    "title": "Flip: Focus Timer For Study",
+    "companyName": "Flip Studio",
+    "id": 3,
+    "description": "Boost your focus using Pomodoro-based study sessions and real-time analytics on your productivity.",
+    "size": 120,
+    "reviews": 12400,
+    "ratingAvg": 4.7,
+    "downloads": 2600000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 7700 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3039/3039439.png",
+    "title": "Pomocat: Cute Pomodoro Timer",
+    "companyName": "CatTimer Studio",
+    "id": 4,
+    "description": "A cute cat-themed Pomodoro app that helps you stay motivated and manage your work sessions effectively.",
+    "size": 80,
+    "reviews": 48000,
+    "ratingAvg": 4.8,
+    "downloads": 7500000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 11000 },
+      { "name": "5 star", "count": 35680 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1041/1041916.png",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "Schedule Works",
+    "id": 5,
+    "description": "Organize your life with Time Planner — your companion for tasks, goals, routines, and time tracking.",
+    "size": 70,
+    "reviews": 63000,
+    "ratingAvg": 4.8,
+    "downloads": 8200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 11000 },
+      { "name": "5 star", "count": 50100 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3595/3595455.png",
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "HealthyDay Inc.",
+    "id": 6,
+    "description": "Build a consistent morning routine with gentle reminders and habit tracking tools.",
+    "size": 55,
+    "reviews": 27000,
+    "ratingAvg": 4.7,
+    "downloads": 6400000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 18900 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3176/3176367.png",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "Seekr Lab",
+    "id": 7,
+    "description": "Gamify your focus sessions — grow plants and earn rewards as you stay productive.",
+    "size": 110,
+    "reviews": 58000,
+    "ratingAvg": 4.9,
+    "downloads": 9700000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 43600 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3652/3652191.png",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "SleepyTech",
+    "id": 8,
+    "description": "Never oversleep again! Alarmy challenges you to wake up with tasks and puzzles.",
+    "size": 95,
+    "reviews": 42000,
+    "ratingAvg": 4.8,
+    "downloads": 10500000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 27500 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3500/3500833.png",
+    "title": "Habitica: Gamified Task Manager",
+    "companyName": "Habit RPG Inc.",
+    "id": 9,
+    "description": "Turn your life into a game. Complete tasks to level up, earn rewards, and build better habits.",
+    "size": 130,
+    "reviews": 94000,
+    "ratingAvg": 4.9,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 24000 },
+      { "name": "5 star", "count": 65400 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3658/3658791.png",
+    "title": "TickTick: ToDo & Calendar",
+    "companyName": "Appest Inc.",
+    "id": 10,
+    "description": "Seamlessly combine tasks, notes, and calendar in one smart productivity app.",
+    "size": 105,
+    "reviews": 87000,
+    "ratingAvg": 4.8,
+    "downloads": 17500000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2400 },
+      { "name": "4 star", "count": 21000 },
+      { "name": "5 star", "count": 61900 }
+    ]
+  }
+]

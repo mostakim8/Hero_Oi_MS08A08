@@ -8,9 +8,9 @@ const Apps = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [sortBy, setSortBy] = useState("default");
 
-    // 🚨 Case-sensitive filtering logic applied here
+    // Case-sensitive filtering logic 
     const filteredApps = appsData
-        .filter(app => app.title.includes(searchTerm)) // .toLowerCase() সরিয়ে দেওয়া হয়েছে
+        .filter(app => app.title.includes(searchTerm)) 
         .sort((a, b) => {
             if (sortBy === "az") return a.title.localeCompare(b.title);
             if (sortBy === "za") return b.title.localeCompare(a.title);
@@ -25,10 +25,10 @@ const Apps = () => {
                 
                 {/* Header Section */}
                 <div className='text-center mb-16'>
-                    <h2 className="text-5xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+                    <h2 className="text-5xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
                         Our All Applications
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto text-xl">
+                    <p className="text-[#627382] max-w-2xl mx-auto text-xl">
                         Explore All Apps on the Market developed by us. We code for Millions
                     </p>
                 </div>
@@ -36,12 +36,12 @@ const Apps = () => {
                 {/* Filter Row */}
                 <div className="flex flex-col lg:flex-row justify-between items-center mb-12 gap-6">
                     
-                    {/* App Count (Left) */}
-                    <div className="text-gray-400 font-bold text-lg uppercase tracking-widest order-2 lg:order-1">
-                        App Found (<span className="text-[#632EE3]">{filteredApps.length}</span>)
+                    {/* App Count  */}
+                    <div className="text-[#627382] font-semibold text-2xl uppercase tracking-widest order-2 lg:order-1">
+                        App Found (<span className="text-[#627382]">{filteredApps.length}</span>)
                     </div>
 
-                    {/* Search & Sort Container (Right) */}
+                    {/* Search & Sort Container Right side */}
                     <div className="flex flex-col md:flex-row items-center gap-4 w-full lg:w-auto order-1 lg:order-2">
                         
                         {/* Case-sensitive Search Bar */}
@@ -98,18 +98,18 @@ const Apps = () => {
                                     />
                                 </div>
                                 
-                                <h3 className="font-bold text-center text-gray-800 text-lg truncate mb-5 group-hover:text-[#632EE3]">
+                                <h3 className="font-medium text-center text-gray-800 text-[20px] truncate mb-5 group-hover:text-[#632EE3]">
                                     {app.title}
                                 </h3>
 
                                 <div className="flex justify-between items-center">
                                     <div className="flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
                                         <img src="/icon-downloads.png" alt="dl" className="w-3.5 h-3.5 opacity-60"/>
-                                        <span className="text-gray-500 font-bold text-[11px]">
+                                        <span className="text-[#00D390] font-medium text-base">
                                             {(app.downloads / 1000000).toFixed(1)}M
                                         </span>
                                     </div>
-                                    <span className="bg-amber-50 text-amber-600 px-3 py-1.5 rounded-full text-[11px] font-bold">
+                                    <span className="bg-amber-50 text-amber-600 px-3 py-1.5 rounded-full text-base font-medium">
                                         ⭐ {app.ratingAvg}
                                     </span>  
                                 </div>

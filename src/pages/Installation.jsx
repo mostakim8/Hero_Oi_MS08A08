@@ -20,7 +20,6 @@ const Installation = () => {
         });
     };
 
-    // সর্টিং লজিক (Size অনুযায়ী)
     const sortedApps = [...installedApps].sort((a, b) => {
         if (sortBy === "size") return b.size - a.size;
         return a.title.localeCompare(b.title);

@@ -1,6 +1,6 @@
 [
   {
-    "image": "/public/Apps Icon/Forest_Productivity-preview.png",
+    "image": "/Apps Icon/Forest - Focus For Productivity-preview.png",
     "title": "Forest: Focus For Productivity",
     "companyName": "Forest App Ltd.",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "/public/Apps Icon/SmPlan_ToDo_List-preview.png",
+    "image": "Apps Icon/SmPlan_ToDo_List-preview.png",
     "title": "SmPlan: ToDo List",
     "companyName": "Planner Co.",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "/public/Apps Icon/Flip .webp",
+    "image": "/Apps Icon/Flip .webp",
     "title": "Flip: Focus Timer For Study",
     "companyName": "Flip Studio",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "/public/Apps Icon/Pomocat.png",
+    "image": "/Apps Icon/Pomocat.png",
     "title": "Pomocat: Cute Pomodoro Timer",
     "companyName": "CatTimer Studio",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "/public/Apps Icon/Time Planner.png",
+    "image": "/Apps Icon/Time Planner.png",
     "title": "Time Planner: Schedule & Tasks",
     "companyName": "Schedule Works",
     "id": 5,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "/public/Apps Icon/Focus Plant.png",
+    "image": "/Apps Icon/Focus Plant.png",
     "title": "Focus Plant: Pomodoro Forest",
     "companyName": "Seekr Lab",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "/public/Apps Icon/Alarmy-Alarm-preview.png",
+    "image": "/Apps Icon/Alarmy-Alarm-preview.png",
     "title": "Alarmy - Alarm Clock & Sleep",
     "companyName": "SleepyTech",
     "id": 8,

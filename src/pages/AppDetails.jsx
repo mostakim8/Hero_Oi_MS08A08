@@ -56,31 +56,32 @@ const AppDetails = () => {
 
                     {/* Right: Info Content */}
                     <div className="flex-1 pt-4">
-                        <h1 className="text-4xl md:text-5xl font-black text-[#0B1B35] mb-2">{app.title}</h1>
-                        <p className="text-[#9F62F2] font-semibold text-xl mb-10">Developed by productive.io</p>
+                        <h1 className="text-[32px] md:text-[32px] font-bold text-[#0B1B35] mb-2">{app.title}</h1>
+                        <p className="text-[#627382] font-semibold text-xl mb-10">Developed by
+                            <span className='text-[#9F62F2]'> productive.io</span> </p>
                         
-                        {/* 🚨 Updated Stats Layout (Vertical Stack) 🚨 */}
                         <div className="flex gap-16 mb-12 pb-10 border-b border-gray-100">
                             
                             {/* Download Stat */}
                             <div className="flex flex-col items-center text-center">
-                                <Download size={32} className="text-[#55E49C] mb-2" />
-                                <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 mb-2">Downloads</span>
-                                <p className="text-4xl font-black text-[#0B1B35]">{(app.downloads / 1000000).toFixed(0)}M</p>
+                                <Download size={40} className="text-[#55E49C] mb-2" />
+                                <span className="text-base  uppercase tracking-wider text-gray-400 mb-2">Downloads</span>
+                                <p className="text-5xl font-extrabold text-[#0B1B35]">{(app.downloads / 1000000).toFixed(0)}M</p>
                             </div>
                             
                             {/* Ratings Stat */}
                             <div className="flex flex-col items-center text-center">
-                                <Star size={32} className="text-orange-400 mb-2" fill="currentColor" />
-                                <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 mb-2">Average Ratings</span>
-                                <p className="text-4xl font-black text-[#0B1B35]">{app.ratingAvg}</p>
+                                <Star size={40} className="text-orange-400 mb-2" fill="currentColor" />
+                                <span className="text-base uppercase tracking-wider text-gray-400 mb-2">Average Ratings</span>
+                                <p className="text-5xl font-extrabold text-[#0B1B35]">{app.ratingAvg}</p>
                             </div>
 
                             {/* Reviews Stat */}
                             <div className="flex flex-col items-center text-center">
-                                <MessageSquare size={32} className="text-[#9F62F2] mb-2" />
-                                <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 mb-2">Total Reviews</span>
-                                <p className="text-4xl font-black text-[#0B1B35]">54K</p>
+                                <img src="/public/icon-review.png" alt="" className='h-14 -mb-1' />
+                                {/* <MessageSquare size={32} className="text-[#9F62F2] mb-2" /> */}
+                                <span className="text-base uppercase tracking-wider text-gray-400 mb-2">Total Reviews</span>
+                                <p className="text-4xl font-extrabold text-[#0B1B35]">54K</p>
                             </div>
 
                         </div>
@@ -89,7 +90,7 @@ const AppDetails = () => {
                         <button 
                             onClick={handleInstall}
                             disabled={isInstalled}
-                            className={`w-full md:w-80 py-5 rounded-2xl text-xl font-bold transition-all shadow-xl hover:scale-[1.02] active:scale-95 ${
+                            className={`w-full md:w-80 py-5 rounded-2xl text-xl font-semibold transition-all shadow-xl hover:scale-[1.02] active:scale-95 ${
                                 isInstalled 
                                 ? 'bg-gray-100 text-gray-400 cursor-not-allowed shadow-none' 
                                 : 'bg-[#55E49C] hover:bg-[#48c98a] text-white shadow-green-100'
@@ -102,14 +103,14 @@ const AppDetails = () => {
 
                 {/* Ratings Section */}
                 <div className="mb-24">
-                    <h3 className="text-3xl font-bold mb-10 text-[#0B1B35]">Ratings</h3>
+                    <h3 className="text-xl font-semibold mb-10 text-[#0B1B35]">Ratings</h3>
                     <div className="h-72 w-full max-w-4xl">
                         <ResponsiveContainer width="100%" height="100%">
                             <BarChart layout="vertical" data={chartData}>
                                 <XAxis type="number" hide />
                                 <YAxis dataKey="name" type="category" 
                                 axisLine={false} tickLine={false}
-                                 tick={{fill: '#9CA3AF', fontWeight: 600}} width={80} 
+                                 tick={{fill: '#9CA3AF', fontWeight: 400}} width={80} 
                                  tickFormatter={(value) => `${value}`}/>
                                 <Tooltip cursor={{fill: 'transparent'}} />
                                 <Bar dataKey="count" fill="#F59E0B" radius={[0, 10, 10, 0]} barSize={22} />
@@ -120,8 +121,8 @@ const AppDetails = () => {
 
                 {/* Description Section */}
                 <div className="max-w-4xl">
-                    <h3 className="text-3xl font-bold mb-8 text-[#0B1B35]">Description</h3>
-                    <p className="text-gray-500 leading-loose text-lg whitespace-pre-line">
+                    <h3 className="text-2xl font-semibold mb-8 text-[#0B1B35]">Description</h3>
+                    <p className="text-gray-500 leading-loose text-xl whitespace-pre-line">
                         {app.description}
                     </p>
                 </div>

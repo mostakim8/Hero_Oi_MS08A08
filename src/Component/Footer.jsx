@@ -28,9 +28,9 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* 3. Social Media Section */}
+                    {/* Social Media Section */}
                     <div className="text-center md:text-left">
-                        <h4 className="text-xl font-bold mb-6 text-white uppercase tracking-widest text-sm">Follow Us</h4>
+                        <h4 className="text-xl font-bold mb-6 text-white uppercase tracking-widest ">Follow Us</h4>
                         <div className="flex justify-center md:justify-start gap-6">
                             <Facebook className="hover:text-[#632EE3] cursor-pointer transition-transform hover:scale-110" size={24} />
                             <Twitter className="hover:text-[#632EE3] cursor-pointer transition-transform hover:scale-110" size={24} />
@@ -41,7 +41,7 @@ const Footer = () => {
 
                 {/* Copyright Section */}
                 <p className="text-center mt-10 text-slate-500 text-sm font-medium">
-                   Copyright © {new Date().getFullYear()} - All right reserved Hero.io
+                   Copyright © {new Date().getFullYear()} - All right reserved by HERO.IO
                 </p>
             </div>
         </footer>

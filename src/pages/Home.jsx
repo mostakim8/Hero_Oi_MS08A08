@@ -95,7 +95,7 @@ const Home = () => {
                         >
                             <Link to={`/app/${app.id}`}>
                                 <div className="bg-[#F8F9FF] rounded-3xl p-6 mb-6 flex justify-center items-center aspect-square">
-                                    <img src={app.image} alt={app.title} className="w-20 h-20 object-contain group-hover:scale-110 transition-transform" />
+                                    <img src={app.image} alt={app.title} className=" object-cover group-hover:scale-110 transition-transform" />
                                 </div>
                                 <h3 className="font-medium text-[20px] text-gray-800 mb-2 truncate group-hover:text-[#632EE3]">{app.title}</h3>
 

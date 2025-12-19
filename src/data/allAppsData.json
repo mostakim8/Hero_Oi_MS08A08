@@ -1,27 +1,9 @@
 [
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/3106/3106921.png",
-    "title": "SmPlan: ToDo List",
-    "companyName": "Planner Co.",
-    "id": 1,
-    "description": "Manage your tasks, set reminders, and plan your day effortlessly with SmPlan, the all-in-one productivity app.",
-    "size": 65,
-    "reviews": 12450,
-    "ratingAvg": 4.9,
-    "downloads": 29600000,
-    "ratings": [
-      { "name": "1 star", "count": 210 },
-      { "name": "2 star", "count": 55 },
-      { "name": "3 star", "count": 150 },
-      { "name": "4 star", "count": 2035 },
-      { "name": "5 star", "count": 10000 }
-    ]
-  },
-  {
-    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+    "image": "/public/Apps Icon/Forest_Productivity-preview.png",
     "title": "Forest: Focus For Productivity",
     "companyName": "Forest App Ltd.",
-    "id": 2,
+    "id": 1,
     "description": "Stay focused and grow virtual trees while you concentrate on your work or study sessions.",
     "size": 90,
     "reviews": 84500,
@@ -36,7 +18,25 @@
     ]
   },
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/685/685022.png",
+    "image": "/public/Apps Icon/SmPlan_ToDo_List-preview.png",
+    "title": "SmPlan: ToDo List",
+    "companyName": "Planner Co.",
+    "id": 2,
+    "description": "Manage your tasks, set reminders, and plan your day effortlessly with SmPlan, the all-in-one productivity app.",
+    "size": 65,
+    "reviews": 12450,
+    "ratingAvg": 4.9,
+    "downloads": 29600000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 2035 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "/public/Apps Icon/Flip .webp",
     "title": "Flip: Focus Timer For Study",
     "companyName": "Flip Studio",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/3039/3039439.png",
+    "image": "/public/Apps Icon/Pomocat.png",
     "title": "Pomocat: Cute Pomodoro Timer",
     "companyName": "CatTimer Studio",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/1041/1041916.png",
+    "image": "/public/Apps Icon/Time Planner.png",
     "title": "Time Planner: Schedule & Tasks",
     "companyName": "Schedule Works",
     "id": 5,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/3176/3176367.png",
+    "image": "/public/Apps Icon/Focus Plant.png",
     "title": "Focus Plant: Pomodoro Forest",
     "companyName": "Seekr Lab",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/3652/3652191.png",
+    "image": "/public/Apps Icon/Alarmy-Alarm-preview.png",
     "title": "Alarmy - Alarm Clock & Sleep",
     "companyName": "SleepyTech",
     "id": 8,

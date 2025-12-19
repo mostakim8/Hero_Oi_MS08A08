@@ -8,7 +8,7 @@ const Apps = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [sortBy, setSortBy] = useState("default");
 
-    // Case-sensitive filtering logic 
+    // Case-sensitive filtering 
     const filteredApps = appsData
         .filter(app => app.title.includes(searchTerm)) 
         .sort((a, b) => {
@@ -58,7 +58,7 @@ const Apps = () => {
                         {/* Sort Dropdown */}
                         <div className="relative w-full md:w-56">
                             <select 
-                                className="select w-full h-14 pl-6 pr-10 rounded-2xl bg-white border border-gray-100 shadow-sm outline-none focus:ring-2 focus:ring-[#632EE3]/20 font-bold text-gray-600 appearance-none cursor-pointer"
+                                className="select w-full h-14 pl-6 pr-10 rounded-2xl bg-white border border-gray-100 shadow-sm outline-none focus:ring-2 focus:ring-[#632EE3]/20 text-gray-600 appearance-none cursor-pointer"
                                 onChange={(e) => setSortBy(e.target.value)}
                             >
                                 <option value="default">Sort by: Default</option>
@@ -79,7 +79,7 @@ const Apps = () => {
                         <h2 className='text-black text-4xl font-bold mt-8'>OPPS!! APP NOT FOUND</h2>
                         <p className='text-gray-400 mt-4'>The App you are requesting is not found on our system.  please try another apps</p>
                         <Link to="/" >
-                        <button className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white mt-8'>Go Home</button>
+                        <button className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] mt-8 text-white border-none rounded-lg px-4 py-2 text-sm font-semibold shadow-md hover:shadow-purple-200 transition-all'>Go Home</button>
                         </Link>
                     </div>
                 ) : (
@@ -93,7 +93,7 @@ const Apps = () => {
                                 <div className="bg-[#F8F9FF] rounded-[30px] p-6 mb-6 flex justify-center items-center aspect-square">
                                     <img 
                                         src={app.image} 
-                                        className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-500" 
+                                        className="object-contain group-hover:scale-110 transition-transform duration-500" 
                                         alt={app.title}
                                     />
                                 </div>

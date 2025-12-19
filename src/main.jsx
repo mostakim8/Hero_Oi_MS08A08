@@ -17,7 +17,7 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: 'apps', element: <Apps /> },
       { path: 'installation', element: <Installation /> },
-      { path: 'app/:id', element: <AppDetails /> }, // 🚨 ডাইনামিক রাউট যোগ করা হয়েছে
+      { path: 'app/:id', element: <AppDetails /> }, 
       { path: '*', element: <NotFound /> }
     ],
   },

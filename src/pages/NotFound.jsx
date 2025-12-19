@@ -19,7 +19,7 @@ const NotFound = () => {
 
           {/* Main Error Message (Matches "APP NOT FOUND" area) */}
           <h2 className="text-4xl font-bold mb-4 text-warning">
-            OPPS!! APP NOT FOUND
+            OPPS!!  NOT FOUND
           </h2>
           <p className="text-xl text-base-content/80 mb-8">
             The page you requested is deserted.

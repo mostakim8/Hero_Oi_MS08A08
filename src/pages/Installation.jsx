@@ -30,23 +30,23 @@ const Installation = () => {
             <Toaster position="top-right" />
             
             <div className="max-w-6xl mx-auto px-6 pb-20">
-                {/* 1. Header Section */}
+                {/* Header Section */}
                 <div className="text-center mb-16">
-                    <h1 className="text-5xl font-black text-[#0B1B35] mb-4">Your Installed Apps</h1>
-                    <p className="text-gray-400 font-medium text-lg">
+                    <h1 className="text-5xl font-bold text-[#0B1B35] mb-4">Your Installed Apps</h1>
+                    <p className="text-[#627382] text-[20px]">
                         Explore All Trending Apps on the Market developed by us
                     </p>
                 </div>
 
-                {/* 2. Apps Found & Sort Row */}
+                {/* Apps Found & Sort Row */}
                 <div className="flex justify-between items-center mb-10">
-                    <div className="text-xl font-bold text-[#0B1B35]">
+                    <div className="text-2xl font-semibold text-[#0B1B35]">
                         {installedApps.length} Apps Found
                     </div>
                     
                     <div className="relative">
                         <select 
-                            className="select select-bordered w-44 h-12 rounded-xl bg-white border-gray-200 text-gray-500 font-bold appearance-none pl-4 pr-10 outline-none shadow-sm"
+                            className="select select-bordered w-44 h-12 rounded-xl bg-white border-gray-200 text-gray-500 text-base appearance-none pl-4 pr-10 outline-none shadow-sm"
                             value={sortBy}
                             onChange={(e) => setSortBy(e.target.value)}
                         >
@@ -57,7 +57,7 @@ const Installation = () => {
                     </div>
                 </div>
 
-                {/* 3. App List (Figma Style) */}
+                {/* App List */}
                 <div className="space-y-4">
                     {installedApps.length === 0 ? (
                         <div className="text-center py-32 bg-white rounded-[40px] border border-dashed border-gray-200">
@@ -75,12 +75,12 @@ const Installation = () => {
                                     
                                     {/* Info Details */}
                                     <div>
-                                        <h3 className="font-bold text-xl text-[#0B1B35] mb-2">{app.title}</h3>
-                                        <div className="flex items-center gap-5 text-sm font-bold">
-                                            <span className="flex items-center gap-1 text-[#55E49C]">
+                                        <h3 className="font-medium text-xl text-[#0B1B35] mb-2">{app.title}</h3>
+                                        <div className="flex items-center gap-5 text-base ">
+                                            <span className="flex items-center gap-1 text-[#55E49C] font-medium">
                                                 <Download size={14} /> {(app.downloads / 1000000).toFixed(0)}M
                                             </span>
-                                            <span className="flex items-center gap-1 text-orange-400">
+                                            <span className="flex items-center gap-1 text-orange-400 font-medium">
                                                 <Star size={14} fill="currentColor" /> {app.ratingAvg}
                                             </span>
                                             <span className="text-gray-400">
@@ -93,7 +93,7 @@ const Installation = () => {
                                 {/* Uninstall Button */}
                                 <button 
                                     onClick={() => handleUninstall(app.id)} 
-                                    className="bg-[#55E49C] hover:bg-[#48c98a] text-white px-8 py-3 rounded-xl font-bold transition-colors"
+                                    className="bg-[#55E49C] hover:bg-[#48c98a] text-white px-8 py-3 rounded-xl text-base font-semibold transition-colors"
                                 >
                                     Uninstall
                                 </button>

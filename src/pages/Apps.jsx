@@ -8,8 +8,9 @@ const Apps = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [sortBy, setSortBy] = useState("default");
 
+    // 🚨 Case-sensitive filtering logic applied here
     const filteredApps = appsData
-        .filter(app => app.title.toLowerCase().includes(searchTerm.toLowerCase()))
+        .filter(app => app.title.includes(searchTerm)) // .toLowerCase() সরিয়ে দেওয়া হয়েছে
         .sort((a, b) => {
             if (sortBy === "az") return a.title.localeCompare(b.title);
             if (sortBy === "za") return b.title.localeCompare(a.title);
@@ -24,26 +25,26 @@ const Apps = () => {
                 
                 {/* Header Section */}
                 <div className='text-center mb-16'>
-                    <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+                    <h2 className="text-5xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
                         Our All Applications
                     </h2>
-                    <p className="text-gray-400 font-medium max-w-2xl mx-auto">
-                        We build high-performance applications for millions. Explore our ecosystem.
+                    <p className="text-gray-400 max-w-2xl mx-auto text-xl">
+                        Explore All Apps on the Market developed by us. We code for Millions
                     </p>
                 </div>
 
-                {/* --- Main Filter Row --- */}
+                {/* Filter Row */}
                 <div className="flex flex-col lg:flex-row justify-between items-center mb-12 gap-6">
                     
-                    {/* App Count (Left Side) */}
+                    {/* App Count (Left) */}
                     <div className="text-gray-400 font-bold text-lg uppercase tracking-widest order-2 lg:order-1">
                         App Found (<span className="text-[#632EE3]">{filteredApps.length}</span>)
                     </div>
 
-                    {/* Search & Sort Container (Right Side) */}
+                    {/* Search & Sort Container (Right) */}
                     <div className="flex flex-col md:flex-row items-center gap-4 w-full lg:w-auto order-1 lg:order-2">
                         
-                        {/* Search Bar */}
+                        {/* Case-sensitive Search Bar */}
                         <div className="relative w-full md:w-80">
                             <input
                                 type="text"
@@ -55,7 +56,7 @@ const Apps = () => {
                         </div>
 
                         {/* Sort Dropdown */}
-                        <div className="relative w-40 bg-red-500">
+                        <div className="relative w-full md:w-56">
                             <select 
                                 className="select w-full h-14 pl-6 pr-10 rounded-2xl bg-white border border-gray-100 shadow-sm outline-none focus:ring-2 focus:ring-[#632EE3]/20 font-bold text-gray-600 appearance-none cursor-pointer"
                                 onChange={(e) => setSortBy(e.target.value)}
@@ -66,15 +67,20 @@ const Apps = () => {
                                 <option value="rating">Highest Rating</option>
                                 <option value="downloads">Highest Downloading</option>
                             </select>
-                            {/* <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" size={18} /> */}
+                            
                         </div>
                     </div>
                 </div>
 
-                {/* --- Apps Grid --- */}
+                {/* Apps Grid */}
                 {filteredApps.length === 0 ? (
                     <div className="text-center py-40 border-2 border-dashed border-gray-100 rounded-[40px]">
-                        <h2 className="text-3xl font-bold text-gray-300 italic">No Application Found</h2>
+                        <img src="/public/App-Error.png" className='mx-auto'/>
+                        <h2 className='text-black text-4xl font-bold mt-8'>OPPS!! APP NOT FOUND</h2>
+                        <p className='text-gray-400 mt-4'>The App you are requesting is not found on our system.  please try another apps</p>
+                        <Link to="/" >
+                        <button className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white mt-8'>Go Home</button>
+                        </Link>
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">

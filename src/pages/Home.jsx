@@ -14,10 +14,10 @@ const Home = () => {
                 <div className=" text-center  py-20 r ">
                     <motion.h1 
                         initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-                        className="mx-auto text-5xl md:text-6xl font-extrabold mb-6 tracking-tight text-gray-900 leading-tight">We Build <br /> 
-                        <span className="text-[#632EE3]">productive Apps</span>
+                        className="mx-auto text-7xl md:text-6xl font-bold mb-6 tracking-tight text-gray-900 leading-tight">We Build <br /> 
+                        <span className="text-[#632EE3]">productive </span>Apps
                     </motion.h1>
-                    <p className="text-gray-500 text-lg mb-10 max-w-xl mx-auto">
+                    <p className="text-gray-500 text-xl mb-10 max-w-xl mx-auto">
                        At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.
                     </p>
                     
@@ -54,24 +54,24 @@ const Home = () => {
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full"> 
 
                             {/* Total Download */}
-                                     <div className="stat text-center p-8  backdrop-blur-md rounded-4xl   hover:bg-white/10 transition-all">
-                                         <div className="stat-title text-purple-100 uppercase tracking-widest text-xs font-bold">Total Downloads</div>
-                                         <div className="stat-value font-black text-5xl md:text-6xl py-3 tracking-tighter">29.6M</div>
-                                         <div className="stat-desc text-purple-200 font-medium">Trending Apps Activity</div>
+                                     <div className="stat text-center p-8 backdrop-blur-md rounded-4xl hover:bg-white/10 transition-all">
+                                         <div className="stat-title text-purple-100 uppercase tracking-widest text-base ">Total Downloads</div>
+                                         <div className="stat-value font-extrabold text-[64px] md:text-[64px] py-3 tracking-tighter">29.6M</div>
+                                         <div className="stat-desc text-purple-200 text-base">21% more than last month</div>
                                      </div>
 
                             {/* Total Reviews */}
                                      <div className="stat text-center p-8 backdrop-blur-md rounded-4xl hover:bg-white/10 transition-all">
-                                         <div className="stat-title text-purple-100 uppercase tracking-widest text-xs font-bold">Total Reviews</div>
-                                         <div className="stat-value font-black text-5xl md:text-6xl py-3 tracking-tighter">906K</div>
-                                         <div className="stat-desc text-purple-200 font-medium">Applications Live</div>
+                                         <div className="stat-title text-purple-100 uppercase tracking-widest text-base">Total Reviews</div>
+                                         <div className="stat-value font-extrabold text-[64px] md:text-[64px] py-3 tracking-tighter">906K</div>
+                                         <div className="stat-desc text-purple-200 text-base">46% more than last month</div>
                                      </div>
 
                             {/* Active Apps */}
-                                     <div className="stat text-center p-8  backdrop-blur-md rounded-4xl hover:bg-white/10 transition-all">
-                                         <div className="stat-title text-purple-100 uppercase tracking-widest text-xs font-bold">Active Apps</div>
-                                         <div className="stat-value font-black text-5xl md:text-6xl py-3 tracking-tighter">132+</div>
-                                         <div className="stat-desc text-purple-200 font-medium">Active Daily Users</div>
+                                     <div className="stat text-center p-8 backdrop-blur-md rounded-4xl hover:bg-white/10 transition-all">
+                                         <div className="stat-title text-purple-100 uppercase tracking-widest text-base">Active Apps</div>
+                                         <div className="stat-value font-black text-[64px] md:text-[64px] py-3 tracking-tighter">132+</div>
+                                         <div className="stat-desc text-purple-200 text-base">31 more will Launch</div>
                                      </div>
 
                                 </div>
@@ -80,8 +80,8 @@ const Home = () => {
 
                 {/* Trending Apps */}
                 <div className="text-center mt-14 mb-10">
-                    <h2 className="text-3xl font-bold text-gray-800 tracking-tight">Trending Apps</h2>
-                    <h6 className='text-gray-500'>Explore All Trending Apps on the Market developed by us</h6>
+                    <h2 className="text-5xl font-bold text-gray-800 tracking-tight">Trending Apps</h2>
+                    <h6 className='text-[20px] text-[#627382] mt-4'>Explore All Trending Apps on the Market developed by us</h6>
                 </div>
 
                 <div className="mx-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-9">
@@ -97,17 +97,17 @@ const Home = () => {
                                 <div className="bg-[#F8F9FF] rounded-3xl p-6 mb-6 flex justify-center items-center aspect-square">
                                     <img src={app.image} alt={app.title} className="w-20 h-20 object-contain group-hover:scale-110 transition-transform" />
                                 </div>
-                                <h3 className="font-bold text-lg text-gray-800 mb-2 truncate group-hover:text-[#632EE3]">{app.title}</h3>
+                                <h3 className="font-medium text-[20px] text-gray-800 mb-2 truncate group-hover:text-[#632EE3]">{app.title}</h3>
 
                                 <div className="flex justify-between items-center">
                                      <div className="flex items-center gap-1.5 bg-gray-50 px-3 py-1 rounded-full border border-gray-100">
 
                                      <img src="/icon-downloads.png" alt="downloads" className="w-4 h-4 opacity-70"/>
-                                     <span className="text-gray-500 font-semibold text-xs tracking-tight">
+                                     <span className=" text-[#00D390] font-medium text-base tracking-tight">
                                             {(app.downloads / 1000000).toFixed(1)}
                                      </span>
                                      </div>
-                                    <span className="bg-amber-50 text-amber-600 px-3 py-1 rounded-full text-xs font-bold font-['Poppins']">⭐ {app.ratingAvg}</span>  
+                                    <span className="bg-amber-50 text-amber-600 px-3 py-1 rounded-full text-base font-medium">⭐ {app.ratingAvg}</span>  
                                 </div>
                             </Link>
                         </motion.div>
@@ -115,7 +115,7 @@ const Home = () => {
                 </div>
                 <div className='text-center mt-8'>
                             <Link to="/apps">
-                                <button className='btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-lg font-bold text-white hover:bg-[#4d23b3] border-none  px-10  rounded-2xl shadow-xl shadow-purple-100 transition-all duration-300'>Show All                                  
+                                <button className='btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-base font-semibold text-white hover:bg-[#4d23b3] border-none px-10 rounded-2xl shadow-xl shadow-purple-100 transition-all duration-300'>Show All                                  
                                 </button>
                             </Link>
                 </div>

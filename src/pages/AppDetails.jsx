@@ -35,7 +35,7 @@ const AppDetails = () => {
     if (!app) return <div className="text-center py-40 font-bold text-2xl">App Not Found</div>;
 
     const chartData = [...app.ratings].reverse().map(item => ({
-        name: `${item.name} star`,
+        name: `${item.name} `,
         count: item.count
     }));
 
@@ -107,7 +107,10 @@ const AppDetails = () => {
                         <ResponsiveContainer width="100%" height="100%">
                             <BarChart layout="vertical" data={chartData}>
                                 <XAxis type="number" hide />
-                                <YAxis dataKey="name" type="category" axisLine={false} tickLine={false} tick={{fill: '#9CA3AF', fontWeight: 600}} width={80} />
+                                <YAxis dataKey="name" type="category" 
+                                axisLine={false} tickLine={false}
+                                 tick={{fill: '#9CA3AF', fontWeight: 600}} width={80} 
+                                 tickFormatter={(value) => `${value}`}/>
                                 <Tooltip cursor={{fill: 'transparent'}} />
                                 <Bar dataKey="count" fill="#F59E0B" radius={[0, 10, 10, 0]} barSize={22} />
                             </BarChart>

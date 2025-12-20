@@ -17,7 +17,7 @@ const Navbar = () => {
                 {/* Logo Section */}
                 <Link to="/" className="flex items-center gap-2">
                     {/* লোগো পাথ ঠিক আছে কি না নিশ্চিত হয়ে নিন */}
-                    <img src="/src/assets/logo.png" alt="Logo" className="h-8" />
+                    <img src="/Apps Icon/logo.png" alt="Logo" className="h-8" />
                     <span className="text-xl font-black bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
                         HERO.IO
                     </span>

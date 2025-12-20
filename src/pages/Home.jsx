@@ -102,7 +102,7 @@ const Home = () => {
                                 <div className="flex justify-between items-center">
                                      <div className="flex items-center gap-1.5 bg-gray-50 px-3 py-1 rounded-full border border-gray-100">
 
-                                     <img src="/icon-downloads.png" alt="downloads" className="w-4 h-4 opacity-70"/>
+                                     <img src="/Apps Icon/icon-downloads.png" alt="downloads" className="w-4 h-4 opacity-70"/>
                                      <span className=" text-[#00D390] font-medium text-base tracking-tight">
                                             {(app.downloads / 1000000).toFixed(1)}
                                      </span>

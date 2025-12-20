@@ -24,7 +24,7 @@ const Home = () => {
                     <div className="mx-auto flex flex-col sm:flex-row justify-center gap-6 mt-10">
                          {/* Google Play Button */}
                     <a href="https://play.google.com/store" className="btn rounded-2xl hover:bg-gray-200 text-white border-none px-10 h-16 shadow-xl shadow-gray-300 flex items-center gap-3 transition-all transform hover:scale-105">
-                         <img src="/public/fi_16076057.png" className="w-7 h-7" alt="Google Play" />
+                         <img src="/Apps Icon/fi_16076057.png" className="w-7 h-7" alt="Google Play" />
                          <div className="text-left">    
                          <p className="text-lg text-black font-semibold leading-none">Google Play</p>
                         </div>
@@ -32,7 +32,7 @@ const Home = () => {
 
                          {/* App Store Button */}
                      <a href="https://www.apple.com/app-store/" className="btn rounded-2xl hover:bg-gray-200 text-white border-none px-10 h-16 shadow-xl shadow-gray-300 flex items-center gap-3 transition-all transform hover:scale-105">
-                         <img src="/public/fi_5977575.png" className="w-7 h-7" alt="App Store"/>
+                         <img src="/Apps Icon/fi_5977575.png" className="w-7 h-7" alt="App Store"/>
                          <div className="text-left">
                          <p className="text-lg text-black font-semibold leading-none">App Store</p>
                          </div>
@@ -43,7 +43,7 @@ const Home = () => {
 
              {/* banner img  */}
                 <div className="mx-auto flex justify-center items-center w-full mt-12 px-4">
-                         <img src="/hero.png" alt="Hero Banner" className="max-w-full h-auto"/>
+                         <img src="/Apps Icon/hero.png" alt="Hero Banner" className="max-w-full h-auto"/>
                 </div>
 
 

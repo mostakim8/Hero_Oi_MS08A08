@@ -78,7 +78,7 @@ const AppDetails = () => {
 
                             {/* Reviews Stat */}
                             <div className="flex flex-col items-center text-center">
-                                <img src="/public/icon-review.png" alt="" className='h-14 -mb-1' />
+                                <img src="/Apps Icon/icon-review.png" alt="" className='h-14 -mb-1' />
                                 {/* <MessageSquare size={32} className="text-[#9F62F2] mb-2" /> */}
                                 <span className="text-base uppercase tracking-wider text-gray-400 mb-2">Total Reviews</span>
                                 <p className="text-4xl font-extrabold text-[#0B1B35]">54K</p>

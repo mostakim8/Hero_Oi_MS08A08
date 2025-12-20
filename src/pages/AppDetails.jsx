@@ -25,10 +25,7 @@ const AppDetails = () => {
             const updated = [...installed, app];
             localStorage.setItem('installedApps', JSON.stringify(updated));
             setIsInstalled(true);
-            toast.success("Successfully Installed!", { 
-                icon: '🚀', 
-                style: { borderRadius: '15px', background: '#333', color: '#fff' } 
-            });
+            toast.success("Successfully Installed!");
         }
     };
 

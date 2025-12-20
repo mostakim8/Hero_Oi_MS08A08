@@ -6,7 +6,7 @@ import App from './App.jsx';
 import Home from './pages/Home.jsx';
 import Apps from './pages/Apps.jsx';
 import Installation from './pages/Installation.jsx';
-import AppDetails from './pages/AppDetails.jsx'; // 🚨 নতুন ইমপোর্ট
+import AppDetails from './pages/AppDetails.jsx'; 
 import NotFound from './pages/NotFound.jsx';
 
 const router = createBrowserRouter([
